@@ -8,9 +8,12 @@ Collection of Angular apps, custom Directives,
 **Mongo DB**
 ```
 URL : https://www.mongodb.com/download-center/community
+URL32: https://www.mongodb.org/dl/win32/i386
 os : windows
 package : zip
 ```
+
+
 **Node JS**
 ```
 URL : https://nodejs.org/en/download/
@@ -47,11 +50,14 @@ package : LTS 12.16.1
   5. ng serve   
       once it is done, browse http://localhost:4200 in browser 
 ```
-```
+
 # Complexpp Test :
+
   **Pre-requisite**
    run golang app or node JS  or Java app to expose REST API.
+
   **Steps to Run**
+
 ```
   1. download the attached zip file - https://github.com/beginsmauel/angularapps/raw/master/simpleapp.zip
   2. extract it 
@@ -62,3 +68,10 @@ package : LTS 12.16.1
   6. ng serve   --port 3200
       once it is done, browse http://localhost:3200 in browser 
 ```
+
+# References
+ a. https://angular.io/guide/http
+ b. https://cli.angular.io/
+ c. https://www.javatpoint.com/angular-7-tutorial
+ d. https://javascript.info/
+ e. https://www.w3schools.com/js/
