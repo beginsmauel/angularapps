@@ -70,8 +70,10 @@ package : LTS 12.16.1
 ```
 
 # References
+```
  a. https://angular.io/guide/http
  b. https://cli.angular.io/
  c. https://www.javatpoint.com/angular-7-tutorial
  d. https://javascript.info/
  e. https://www.w3schools.com/js/
+```
