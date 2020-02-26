@@ -51,7 +51,7 @@ package : LTS 12.16.1
       once it is done, browse http://localhost:4200 in browser 
 ```
 
-# Complexpp Test :
+# Complex App Test :
 
   **Pre-requisite**
    run golang app or node JS  or Java app to expose REST API.
