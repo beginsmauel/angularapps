@@ -34,7 +34,7 @@ package : LTS 12.16.1
   cmd : mongod 
 
 # SimpleApp Test :
-  1. download the attached zip file
+  1. download the attached zip file - Click Here(https://github.com/beginsmauel/angularapps/raw/master/simpleapp.zip)
   2. extract it 
   3. cd <folder>
   4. npm install 
