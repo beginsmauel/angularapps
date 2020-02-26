@@ -20,7 +20,7 @@ package : LTS 12.16.1
 2. install mongodb
 3. install VS Studio code 
 4. install chrome 
-5. install angular cli   - npm install -g angular-cli
+5. install angular cli -  npm install -g @angular/cli
 6. install  rxjs  - npm install rxjs 
 7. install  cors  - npm install cors 
 ```
