@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<title> Import </title>
+<head>
+ <script type="module" language="javascript" src="./import.js" > </script>
+ <script>
+  function useImport(){
+  fetchRemoteData('https://google.com',
+    data => { printResponse(data);});
+  }
+  
+  function printResponse(data){
+    console.log(data);
+  }
+  
+ </script>
+</head>
+ <body onload="useImport()">
+    How to use Import  in Java script 
+	<div id="import" >
+	    <span>Data : </span> <span id="data"></span>
+	</div>
+ </body>
+</html>

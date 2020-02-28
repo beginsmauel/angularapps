@@ -1,0 +1,48 @@
+
+pilots = [];
+years = 14;
+for(var i=0;i<800000;i++){
+  var j = i%2;
+  
+  if (j == 0)
+     years = 10;
+  else 
+     years = 12;	
+	 
+  pilots[i] = { id: i, name: "Poe Dameron", years: years };
+  console.log(pilots[i]); 
+}
+console.log(" Total Records : " + pilots.length);
+
+
+pilots.filter(pilot => pilot.id == 2).forEach( hello =>  console.log(hello));
+
+console.time();
+totalYears = pilots.filter(pilot => pilot.name === "Poe Dameron").reduce((acc,pilot) => acc + pilot.years,0);
+console.timeEnd();
+console.log("Length " + pilots.length);
+console.log("total Years " + totalYears);
+
+
+
+
+
+
+
+console.time();
+num = 0;
+for(i=0; i<800000;i++){
+  if(pilots[i].name == "Poe Dameron")
+      num += pilots[i].years;
+}
+console.log(num)  
+console.timeEnd();
+console.log("Total " + num);
+
+[1,2,3,4].filter(value => value % 2 === 0);
+
+console.time();
+pilots.filter(pilot => pilot.name == "Poe Dameron" ).map( person  => { person.age=10; return person }).reduce((acc,pilot) => acc + pilot.years,0);
+console.timeEnd();
+console.log("Length " + pilots.length);
+

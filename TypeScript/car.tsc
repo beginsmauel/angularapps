@@ -1,0 +1,49 @@
+//https://www.typescriptlang.org/
+
+class BaseModel{
+    wheels: number = 0;
+    color: string = "gray";
+
+    constructor(wh : number, col : string) {
+        this.wheels = wh;
+        this.color = col;
+        
+    }
+
+}
+
+interface KeyFeatures{
+    applyGear(): void;
+    applyBreak(): void;
+
+}
+class Vechicle  implements KeyFeatures{
+
+    public model: BaseModel;
+    constructor(model: BaseModel) {
+        this.model = model;
+    }
+
+    applyGear(): void {
+        if (this.model instanceof Car) {
+            console.log(" Apply EBS ");
+        }
+        else if(this.model instanceof Bus) {
+            console.log("Apply Air Break");
+         }
+    }
+    applyBreak(): void {    
+    }
+
+
+}
+class Car extends BaseModel{}
+class Bus extends BaseModel {}
+
+
+
+let car: BaseModel = new Car(4, "green");
+let bus: BaseModel = new Bus(8,"green");
+let vc = new Vechicle(bus);
+vc.applyGear();
+

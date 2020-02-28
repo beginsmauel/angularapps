@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<title> Classes </title>
+<head>
+ <script language="javascript" src="class.js"> </script>
+ <script language="javascript">
+  function fireCar(){
+   /*let sam = document.createElement("sam");
+   document.body.appendChild(sam);
+   sam.innerHTML= "hello"*/
+
+   let Fiesta = new Ford("black",5);
+  // console.log(Fiesta.getEngineNo());
+
+   // Fiesta.getGear();
+   // Fiesta.getColor();
+	document.getElementById("color").innerHTML = Fiesta.getColor();
+	document.getElementById("gear").innerHTML = Fiesta.getGear();
+	//$("#gear").innerHTML = Fiesta.getGear();
+	
+  }
+ </script>
+</head>
+ <body onload="fireCar()">
+    How to write a class in Java script 
+	<div id="car" >
+	    <span>Car color : </span> <span id="color"></span>
+	    <span>Number of Gears  : </span> <span id="gear"></span>
+	</div>
+ </body>
+</html>
